@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL-find food</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css"></script>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+</head>
+
+<body>
+  <!-- navi bar -->
+  <header class="header">
+    <div class="responsive-bar"></div>
+    <div class="header_content">
+      <div class="header_logo">
+        <a class="header_logo-img" href="/" aria-label="Home"></a>
+        <i id="header_responsive_icon" class="fas fa-bars"></i>
+      </div>
+      <div class="menu">
+        <nav class="header_nav">
+          <ul>
+            <li><a href="/">首頁</a></li>
+            <li><a href="/">熱門店家</a></li>
+            <li><a href="/">收藏店家</a></li>
+          </ul>
+        </nav>
+        <a class="header_btn" href="/">Login/SiginUp</a>
+      </div>
+    </div>
+  </header>
+  {{!-- banner --}}
+  <section class="banner">
+    <div class="highlight-text">
+      <h1>Tickle your taste buds!</h1>
+      <h2>Do n’t be afraid of getting hungry for lunch, quickly find your favorite food!
+      </h2>
+      <form action="/search">
+        <div class="input-group">
+          <input id="keyword-input" type="text" name="keyword" class="form-control"
+            placeholder="input restaurant、category(type all to find all restaurant)" aria-label="Restaurant Name..."
+            value="{{query}}" aria-describedby="search-button">
+          <div class="input-group-append">
+            <button class="btn btn-major" type="submit" id="search-button">search <i
+                class="fas fa-search"></i></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="banner-background"></div>
+  </section>
+
+  {{{body}}}
+
+
+
+
+  <div class="footer">
+
+    <p class="copyright">© 2020 Emily40830. All rights reserved.</p>
+
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/a470dfdd95.js" crossorigin="anonymous"></script>
+  <script src="/javascripts/jquery-3.3.1.js"></script>
+  <script src="/javascripts/bootstrap.js"></script>
+  <script src="/javascripts/popper.min.js"></script>
+  <script src="/javascripts/main.js"></script>
+</body>
+
+</html>
