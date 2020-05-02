@@ -12,7 +12,7 @@ $(document).ready(function () {
   $('#header_responsive_icon').click(function () {
 
     $('.menu').toggleClass('active')
-    console.log('click')
+    // console.log('click')
   })
 })
 
