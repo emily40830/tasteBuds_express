@@ -3,8 +3,8 @@
 初次使用node.js + Express 創建的餐廳瀏覽頁面
 
 ## 專案總覽
-![image](https://github.com/emily40830/tasteBuds_express/public/cover.png)
-![image](https://github.com/emily40830/tasteBuds_express/public/search.png)
+![](https://github.com/emily40830/tasteBuds_express/blob/master/public/cover.png)
+![](https://github.com/emily40830/tasteBuds_express/blob/master/public/search.png)
 
 ## 專案特色
 - 搜尋想要的餐廳，關鍵字不限於英文或中文，搜尋範圍包含分類、餐廳名稱等
