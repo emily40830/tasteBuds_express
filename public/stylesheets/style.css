@@ -1,7 +1,9 @@
-a:hover{
-  text-decoration: none;
+*{
+  box-shadow: border-box;
 }
-
+.wrapper{
+  margin-top: 20px;
+}
 .header{
   display: flex;
   position: fixed;
@@ -211,7 +213,7 @@ a:hover{
   font-size: 0.8rem;
 }
 
-.restaurant-show-title {
+.main-title {
   position: relative;
   /* top: 100px; */
   color: #e67a32;
@@ -220,7 +222,9 @@ a:hover{
   text-shadow: 0 0 10px rgba(200, 200, 200, 0.5);
   margin: 20px;
 }
-
+.popular-res-img{
+  width: 100px;
+}
 .footer {
     display: flex;
     flex-direction: row;

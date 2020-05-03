@@ -39,6 +39,18 @@ app.get('/restaurants/:id', (req, res) => {
   res.render('show', { restaurant: eachRestaurant })
 })
 
+app.get('/popular', (req, res) => {
+  let sortByrating = restaurantList.results.sort((a, b) => {
+    return a.rating < b.rating ? 1 : -1
+  })
+  for (let i = 0; i < sortByrating.length; i++) {
+    sortByrating[i].index = i + 1
+  }
+
+
+  console.log(sortByrating)
+  res.render('popular', { restaurants: sortByrating })
+})
 app.listen(port, () => {
   console.log(`Running on the localhost:${port}`)
 })
