@@ -46,8 +46,6 @@ app.get('/popular', (req, res) => {
   for (let i = 0; i < sortByrating.length; i++) {
     sortByrating[i].index = i + 1
   }
-
-
   // console.log(sortByrating)
   res.render('popular', { restaurants: sortByrating })
 })
