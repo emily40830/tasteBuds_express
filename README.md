@@ -13,19 +13,19 @@
 - 收藏店家是未開發完成的功能，不要點
 
 ## 啟動方式
-- 1. 將專案clone到本地端
+1. 將專案clone到本地端
 ```
 git clone https://github.com/emily40830/tasteBuds_express.git
 ```
-- 2. 進入到專案資料夾後，透過安裝packages
+2. 進入到專案資料夾後，透過安裝packages
 ```
 npm install
 ```
-- 3. 透過nodemon啟動專案
+3. 透過nodemon啟動專案
 ```
 npm run dev
 ```
-- 4. 在terminal可以看到 ‘Running on the localhost:3000‘，開啟瀏覽器在網址列輸入localhost:3000點[這裡](http://localhost:3000)
+4. 在terminal可以看到 `Running on the localhost:3000`，開啟瀏覽器在網址列輸入localhost:3000或點[這裡](http://localhost:3000)
 
 - p.s: 也可透過 `npm start`啟動伺服器
 
