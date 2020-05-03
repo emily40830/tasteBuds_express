@@ -17,7 +17,7 @@
 ```
 git clone https://github.com/emily40830/tasteBuds_express.git
 ```
-2. 進入到專案資料夾後，透過安裝packages
+2. 進入到專案資料夾後，安裝packages
 ```
 npm install
 ```
