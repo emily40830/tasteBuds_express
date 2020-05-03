@@ -48,7 +48,7 @@ app.get('/popular', (req, res) => {
   }
 
 
-  console.log(sortByrating)
+  // console.log(sortByrating)
   res.render('popular', { restaurants: sortByrating })
 })
 app.listen(port, () => {
