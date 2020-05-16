@@ -20,7 +20,7 @@
             {{#each restaurants}}
 
             <tr>
-              <th scope="row">{{this.index}}</th>
+              <th scope="row">{{math @index "+" 1}}</th>
               <td>
                 <a href="/restaurants/{{this.id}}" class="text-secondary">
                   <img class="popular-res-img" src="{{this.image}}" alt="{{this.name}}">

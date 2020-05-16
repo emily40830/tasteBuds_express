@@ -16,7 +16,7 @@ $(document).ready(function () {
   })
 })
 
-// scroll down after search
+// scroll down after search and after to popular
 const path = window.location.pathname
 if (path === '/search') {
   const footer = document.querySelector('.footer')
@@ -24,4 +24,31 @@ if (path === '/search') {
     footer.scrollIntoView({ behavior: 'smooth' })
   })
 }
+if (path === '/popular') {
+  const content = document.querySelector('.wrapper')
+  window.addEventListener('load', () => {
+    content.scrollIntoView({ behavior: 'smooth' })
+  })
+}
+if (path === '/') {
+  const content = document.querySelector('.content')
+  window.addEventListener('load', () => {
+    content.scrollIntoView({ behavior: 'smooth' })
+  })
+}
+if (path === '/new') {
+  const content = document.querySelector('.container')
+  window.addEventListener('load', () => {
+    content.scrollIntoView({ behavior: 'smooth' })
+  })
+}
 
+// confirm before 
+
+
+const deleteButton = document.querySelectorAll('.delete')
+deleteButton.forEach(e => {
+  e.addEventListener('click', () => {
+    window.confirm('資料將永久刪除，確定繼續？')
+  })
+})

@@ -243,6 +243,23 @@
   text-align: center; */
   margin: 0px;
 }
+
+/* 0516 add  */
+.card-columns a:hover {
+  text-decoration: none;
+}
+
+.fa-trash,.fa-edit{
+  color:#666666;
+  
+}
+.fa-trash:hover,.fa-edit:hover{
+  color:#333;
+  cursor: pointer;
+}
+
+
+/* -- */
 @media screen and(max-width:1080 px){
   .header{
     padding: 0 30px;

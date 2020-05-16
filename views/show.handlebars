@@ -1,9 +1,8 @@
 <!-- ./views/show.handlebars -->
 <div class="container show-block wrapper">
   <div class="row">
-
-
     <h1 class="mb-1 main-title">{{ restaurant.name}}</h1>
+
 
   </div>
   <div class="row">
@@ -42,6 +41,19 @@
       <p class="mb-5 mt-4">
         {{ restaurant.description }}
       </p>
+
+      <div class="editor mb-5 mt-4">
+
+        <a href="/restaurants/{{restaurant._id}}/edit" role="button" class="btn btn-warning">
+          <i class="fas fa-edit fa-xs"></i> Edit
+        </a>
+
+        <form action="/restaurants/{{restaurant._id}}/delete" method="post" style="display: inline;">
+          <button type="submit" style="border: none;" class="delete btn btn-danger">
+            <i class="fas fa-trash fa-xs"></i> delete
+          </button>
+        </form>
+      </div>
     </div>
   </div>
 </div>
