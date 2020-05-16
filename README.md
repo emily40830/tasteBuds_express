@@ -5,15 +5,16 @@
 (update on 5/16)串連mongodb提供資料的讀寫功能
 
 ## 專案總覽 OverView
-![](https://github.com/emily40830/tasteBuds_express/blob/master/public/cover.png)
-![](https://github.com/emily40830/tasteBuds_express/blob/master/public/search.png)
+![](https://github.com/emily40830/tasteBuds_express/blob/master/public/feat-mongodb-02.png)
 
 ## 專案特色 Features
-- (update on 5/16)
+- (update on 5/16) 增加新增餐廳的選項
+- (update on 5/16) 增加修改餐廳資訊的選項
+- (update on 5/16) 增加刪除餐廳資訊的選項
 - 搜尋想要的餐廳，關鍵字不限於英文或中文，搜尋範圍包含分類、餐廳名稱等
 - RWD介面讓您瀏覽時有更好的使用者體驗
 - 熱門店家可以迅速讓您知道評價最好的前幾名店家
-- 收藏店家正在開發中功能，不要點
+- 收藏店家為正在開發中的功能，不要點
 
 ## 啟動方式 How to install
 1. 將專案clone到本地端
