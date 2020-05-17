@@ -29,7 +29,7 @@ router.get('/:id', (req, res) => {
   const id = req.params.id
   return RestaurantModel.findById(id)
     .lean()
-    .then(restaurant => res.render('show', { restaurant }))
+    .then(restaurant => res.render('show', { restaurant, root: 1 }))
 })
 
 // Update
@@ -37,7 +37,7 @@ router.get('/:id/edit', (req, res) => {
   const id = req.params.id
   return RestaurantModel.findById(id)
     .lean()
-    .then(restaurant => res.render('edit', { restaurant }))
+    .then(restaurant => res.render('edit', { restaurant, root: 1 }))
     .catch(error => console.log(error))
 })
 router.put('/:id', (req, res) => {

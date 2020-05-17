@@ -9,7 +9,7 @@ router.get('/favorite', (req, res) => {
 
 //Create
 router.get('/new', (req, res) => {
-  res.render('create')
+  res.render('create', { root: 1 })
 })
 
 // Read all
@@ -44,7 +44,7 @@ router.get('/popular', (req, res) => {
   return RestaurantModel.find()
     .sort({ rating: -1 })
     .lean()
-    .then(restaurants => res.render('popular', { restaurants }))
+    .then(restaurants => res.render('popular', { restaurants, root: 1 }))
     .catch(error => console.log(error))
 })
 
