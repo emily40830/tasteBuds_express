@@ -30,18 +30,25 @@ if (path === '/popular') {
     content.scrollIntoView({ behavior: 'smooth' })
   })
 }
-if (path === '/') {
-  const content = document.querySelector('.content')
-  window.addEventListener('load', () => {
-    content.scrollIntoView({ behavior: 'smooth' })
-  })
-}
+// if (path === '/') {
+//   const content = document.querySelector('.content')
+//   window.addEventListener('load', () => {
+//     content.scrollIntoView({ behavior: 'smooth' })
+//   })
+// }
 if (path === '/new') {
   const content = document.querySelector('.container')
   window.addEventListener('load', () => {
     content.scrollIntoView({ behavior: 'smooth' })
   })
 }
+if (path.match('edit')) {
+  const content = document.querySelector('.container')
+  window.addEventListener('load', () => {
+    content.scrollIntoView({ behavior: 'smooth' })
+  })
+}
+
 
 // confirm
 
