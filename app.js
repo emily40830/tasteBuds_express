@@ -5,6 +5,7 @@ const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser')
 const restaurantList = require('./models/seeds/restaurant.json')
 const RestaurantModel = require('./models/restaurant')
+const methodOverride = require('method-override')
 
 // import mongoose and set up db connection
 const mongoose = require('mongoose')
@@ -38,6 +39,7 @@ app.engine('handlebars', exphbs({
 }));
 app.use(express.static('public'))
 app.set('view engine', 'handlebars')
+app.use(methodOverride('_method'))
 
 //favorite(unfinish)
 app.get('/favorite', (req, res) => {
@@ -157,7 +159,7 @@ app.get('/restaurants/:id/edit', (req, res) => {
     .then(restaurant => res.render('edit', { restaurant }))
     .catch(error => console.log(error))
 })
-app.post('/restaurants/:id/edit', (req, res) => {
+app.put('/restaurants/:id', (req, res) => {
   const id = req.params.id
   return RestaurantModel.findById(id)
     .then(restaurant => {
@@ -179,7 +181,7 @@ app.post('/restaurants/:id/edit', (req, res) => {
 
 
 // Delete
-app.post('/restaurants/:id/delete', (req, res) => {
+app.delete('/restaurants/:id', (req, res) => {
   const id = req.params.id
   return RestaurantModel.findById(id)
     .then(restaurant => restaurant.remove())
