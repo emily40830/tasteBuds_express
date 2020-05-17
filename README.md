@@ -1,7 +1,7 @@
 # tasteBuds_express
 
 使用node.js + Express 創建的餐廳瀏覽頁面  
-(update on 5/17)重構路由
+(update on 5/17)重構路由  
 (update on 5/16)串連mongodb提供資料的讀寫功能
 
 ## 專案總覽 OverView
