@@ -5,7 +5,7 @@
 (update on 5/16)串連mongodb提供資料的讀寫功能
 
 ## 專案總覽 OverView
-![](https://github.com/emily40830/tasteBuds_express/blob/master/public/img/sort.png)
+![](https://github.com/emily40830/tasteBuds_express/blob/refactor/public/img/sort.png)
 
 ## 專案特色 Features
 - (update on 5/17) 增加依照不同餐廳屬性排序的功能
