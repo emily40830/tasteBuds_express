@@ -43,12 +43,9 @@ if (path === '/new') {
   })
 }
 
-// confirm before 
+// confirm
 
+function submitOrnot() {
+  return window.confirm('資料將永久刪除，確定繼續？')
+}
 
-const deleteButton = document.querySelectorAll('.delete')
-deleteButton.forEach(e => {
-  e.addEventListener('click', () => {
-    window.confirm('資料將永久刪除，確定繼續？')
-  })
-})

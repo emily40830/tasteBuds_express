@@ -249,11 +249,11 @@
   text-decoration: none;
 }
 
-.fa-trash,.fa-edit{
+#card-editor .fa-trash, #card-editor .fa-edit{
   color:#666666;
   
 }
-.fa-trash:hover,.fa-edit:hover{
+#card-editor .fa-trash, #card-editor .fa-edit{
   color:#333;
   cursor: pointer;
 }
