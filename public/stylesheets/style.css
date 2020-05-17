@@ -50,7 +50,7 @@
   align-items: center;
 }
 .header_logo-img {
-    background: url('/logo.png');
+    background: url('../img/logo.png');
     background-size: 120px;
     background-repeat: no-repeat;
     display: block;
@@ -258,11 +258,7 @@
   cursor: pointer;
 }
 
-/* sort*/
 
-
-
-/* -- */
 @media screen and(max-width:1080 px){
   .header{
     padding: 0 30px;

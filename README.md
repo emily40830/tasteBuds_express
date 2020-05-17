@@ -1,13 +1,14 @@
 # tasteBuds_express
 
 使用node.js + Express 創建的餐廳瀏覽頁面  
-
+(update on 5/17)重構路由
 (update on 5/16)串連mongodb提供資料的讀寫功能
 
 ## 專案總覽 OverView
-![](https://github.com/emily40830/tasteBuds_express/blob/master/public/feat-mongodb-02.png)
+![](https://github.com/emily40830/tasteBuds_express/blob/master/public/img/sort.png)
 
 ## 專案特色 Features
+- (update on 5/17) 增加依照不同餐廳屬性排序的功能
 - (update on 5/16) 增加新增餐廳的選項
 - (update on 5/16) 增加修改餐廳資訊的選項
 - (update on 5/16) 增加刪除餐廳資訊的選項
@@ -43,6 +44,8 @@ npm run seed
 - Express: v4.17.1
 - Express-Handlebars: v4.0.4
 - Mongoose: v5.9.14
+- method-override: v3.0.0
+
 
 ## Author
 Qi-Hua(Emily) Wang
