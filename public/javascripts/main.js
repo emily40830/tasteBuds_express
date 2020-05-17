@@ -56,6 +56,12 @@ if (path.match('/restaurants')) {
   })
 }
 
+if (path.match('/sort')) {
+  const content = document.querySelector('.content')
+  window.addEventListener('load', () => {
+    content.scrollIntoView({ behavior: 'smooth' })
+  })
+}
 
 // confirm
 
