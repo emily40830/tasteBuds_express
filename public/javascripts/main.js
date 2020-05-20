@@ -68,4 +68,3 @@ if (path.match('/sort')) {
 function submitOrnot() {
   return window.confirm('資料將永久刪除，確定繼續？')
 }
-

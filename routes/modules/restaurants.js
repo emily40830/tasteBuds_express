@@ -60,10 +60,22 @@ router.put('/:id', (req, res) => {
     .catch(error => console.log(error))
 })
 
+router.put('/:id/favorite', (req, res) => {
+  const id = req.params.id
+  console.log('favorite been add')
+  return RestaurantModel.findById(id)
+    .then(restaurant => {
+      restaurant.isFavorite = restaurant.isFavorite === true ? false : true
+      return restaurant.save()
+    })
+    .then(() => res.redirect('/'))
+    .catch(error => console.log(error))
+})
 
 // Delete
 router.delete('/:id', (req, res) => {
   const id = req.params.id
+
   return RestaurantModel.findById(id)
     .then(restaurant => restaurant.remove())
     .then(() => res.redirect('/'))

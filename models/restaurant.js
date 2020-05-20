@@ -40,6 +40,10 @@ const restaurantSchema = new Schema({
   description: {
     type: String,
     required: true
+  },
+  isFavorite: {
+    type: Boolean,
+    default: false
   }
 
 })

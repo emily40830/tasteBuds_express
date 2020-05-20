@@ -3,9 +3,9 @@ const router = express.Router()
 const RestaurantModel = require('../../models/restaurant')
 
 //favorite(unfinish)
-router.get('/favorite', (req, res) => {
-  res.render('favorite')
-})
+// router.get('/favorite', (req, res) => {
+//   res.render('favorite')
+// })
 
 //Create
 router.get('/new', (req, res) => {

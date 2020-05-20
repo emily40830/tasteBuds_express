@@ -24,11 +24,31 @@
                   </div>
                   <div class="ml-auto" id="card-editor">
 
-                    <span class="badge badge-pill font-weight-normal">
-                      <a href="./restaurants/{{this._id}}/edit">
-                        <i class="fas fa-edit fa-ml"></i>
+                    <!-- <span class="badge badge-pill font-weight-normal">
+                      <a href="./restaurants/{{this._id}}/favorite" role="button" class="btn btn-danger"
+                        data-toggle="button">
+                        <i class="fas fa-heart fa-xs"></i>
                       </a>
-                    </span>
+                    </span> -->
+
+                    <form action="./restaurants/{{this._id}}/favorite?_method=PUT" method="post"
+                      style="display: inline;" onsubmit="return submitOrnot()">
+
+                      {{!-- 
+                      <div class="btn-group-toggle" data-toggle="buttons">
+                        <label class="btn fas fa-heart fa-ml">
+                          <input type="checkbox">
+                        </label>
+                      </div> --}}
+
+                      <button type="submit" class="fas fa-heart fa-ml" style="border: none;"></button>
+                    </form>
+
+                    <!--<span class="badge badge-pill font-weight-normal"> -->
+                    <a href="./restaurants/{{this._id}}/edit">
+                      <i class="fas fa-edit fa-ml"></i>
+                    </a>
+
 
                     <form action="./restaurants/{{this._id}}?_method=DELETE" method="post" style="display: inline;"
                       onsubmit="return submitOrnot()">
