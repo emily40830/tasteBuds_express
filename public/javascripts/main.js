@@ -69,6 +69,11 @@ if (path.match('/sort')) {
 
 // confirm
 
-function submitOrnot() {
+function deleteOrnot() {
   return window.confirm('資料將永久刪除，確定繼續？')
 }
+
+function deletefromfavoriteOrnot() {
+  return window.confirm(`確定要從收藏移除？`)
+}
+

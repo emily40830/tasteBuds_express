@@ -32,7 +32,7 @@
                     </span> -->
 
                     <form action="./restaurants/{{this._id}}/favorite?_method=PUT" method="post"
-                      style="display: inline;" onsubmit="return submitOrnot()">
+                      style="display: inline;">
 
                       {{!-- 
                       <div class="btn-group-toggle" data-toggle="buttons">
@@ -41,7 +41,8 @@
                         </label>
                       </div> --}}
 
-                      <button type="submit" class="fas fa-heart fa-ml" style="border: none;"></button>
+                      <button type="submit" class="fas fa-heart fa-ml {{#if this.isFavorite }}favorite{{/if}}"
+                        style="border: none;"></button>
                     </form>
 
                     <!--<span class="badge badge-pill font-weight-normal"> -->
@@ -51,7 +52,7 @@
 
 
                     <form action="./restaurants/{{this._id}}?_method=DELETE" method="post" style="display: inline;"
-                      onsubmit="return submitOrnot()">
+                      onsubmit="return deleteOrnot()">
                       <button type="submit" class="delete fas fa-trash fa-ml" style="border: none;"></button>
                     </form>
 

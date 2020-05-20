@@ -249,6 +249,14 @@
   text-decoration: none;
 }
 
+#card-editor .favorite{
+  color: rgb(204, 68, 95)!important;
+}
+#card-editor .favorite:hover{
+  color: crimson!important;
+  cursor: pointer;
+}
+
 #card-editor .fa-trash, #card-editor .fa-edit,#card-editor .fa-heart,#card-editor .fa-window-close{
   color:#666;
   
