@@ -18,6 +18,15 @@ $(document).ready(function () {
 
 // scroll down after search and after to popular
 const path = window.location.pathname
+
+if (path === '/') {
+  const title = document.querySelector('.highlight-text')
+  window.addEventListener('load', () => {
+    title.scrollIntoView({ behavior: 'smooth' })
+  })
+
+}
+
 if (path === '/search') {
   const footer = document.querySelector('.footer')
   window.addEventListener('load', () => {
@@ -30,12 +39,7 @@ if (path === '/popular') {
     content.scrollIntoView({ behavior: 'smooth' })
   })
 }
-// if (path === '/') {
-//   const content = document.querySelector('.content')
-//   window.addEventListener('load', () => {
-//     content.scrollIntoView({ behavior: 'smooth' })
-//   })
-// }
+
 if (path === '/new') {
   const content = document.querySelector('.container')
   window.addEventListener('load', () => {

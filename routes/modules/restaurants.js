@@ -30,6 +30,7 @@ router.get('/:id', (req, res) => {
   return RestaurantModel.findById(id)
     .lean()
     .then(restaurant => res.render('show', { restaurant, root: 1 }))
+    .catch(error => console.log(error))
 })
 
 // Update
@@ -62,7 +63,7 @@ router.put('/:id', (req, res) => {
 
 router.put('/:id/favorite', (req, res) => {
   const id = req.params.id
-  console.log('favorite been add')
+  // console.log('favorite been add')
   return RestaurantModel.findById(id)
     .then(restaurant => {
       restaurant.isFavorite = restaurant.isFavorite === true ? false : true
