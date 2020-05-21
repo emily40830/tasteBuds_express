@@ -1,6 +1,6 @@
 # tasteBuds_express
 
-使用node.js + Express 創建的餐廳瀏覽頁面
+使用node.js + Express 創建的餐廳瀏覽頁面  
 (update on 5/21)新增收藏功能  
 (update on 5/20)優化sorting 方式  
 (update on 5/17)重構路由  
