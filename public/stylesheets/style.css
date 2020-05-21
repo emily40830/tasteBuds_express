@@ -249,10 +249,10 @@
   text-decoration: none;
 }
 
-#card-editor .favorite{
+.favorite{
   color: rgb(204, 68, 95)!important;
 }
-#card-editor .favorite:hover{
+.favorite:hover{
   color: crimson!important;
   cursor: pointer;
 }

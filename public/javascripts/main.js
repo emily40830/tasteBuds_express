@@ -24,7 +24,13 @@ if (path === '/') {
   window.addEventListener('load', () => {
     title.scrollIntoView({ behavior: 'smooth' })
   })
+}
 
+if (path === '/favorite') {
+  const title = document.querySelector('.highlight-text')
+  window.addEventListener('load', () => {
+    title.scrollIntoView({ behavior: 'smooth' })
+  })
 }
 
 if (path === '/search') {

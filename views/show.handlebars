@@ -1,7 +1,14 @@
 <!-- ./views/show.handlebars -->
 <div class="container show-block wrapper">
   <div class="row">
-    <h1 class="mb-1 main-title">{{ restaurant.name}}</h1>
+    <!-- <form action="/restaurants/{{this._id}}/favorite/?_method=PUT" method="post"
+      style="display: {{#if restaurant.isFavorite}}inline{{else}}none{{/if}};"
+      onsubmit="return deletefromfavoriteOrnot()">
+      <button type="submit" class="favorite fas fa-heart fa-lg" style="border: none;"></button>
+    </form> -->
+    <h1 class="mb-1 main-title">{{ restaurant.name}}
+
+    </h1>
 
 
   </div>
