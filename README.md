@@ -1,6 +1,8 @@
 # tasteBuds_express
 
-使用node.js + Express 創建的餐廳瀏覽頁面  
+使用node.js + Express 創建的餐廳瀏覽頁面
+(update on 5/21)新增收藏功能  
+(update on 5/20)優化sorting 方式  
 (update on 5/17)重構路由  
 (update on 5/16)串連mongodb提供資料的讀寫功能
 
@@ -8,6 +10,7 @@
 ![](https://github.com/emily40830/tasteBuds_express/blob/refactor/public/img/sort.png)
 
 ## 專案特色 Features
+- (update on 5/21) 新增收藏餐廳功能   
 - (update on 5/17) 增加依照不同餐廳屬性排序的功能
 - (update on 5/16) 增加新增餐廳的選項
 - (update on 5/16) 增加修改餐廳資訊的選項
@@ -15,7 +18,6 @@
 - 搜尋想要的餐廳，關鍵字不限於英文或中文，搜尋範圍包含分類、餐廳名稱等
 - RWD介面讓您瀏覽時有更好的使用者體驗
 - 熱門店家可以迅速讓您知道評價最好的前幾名店家
-- 收藏店家為正在開發中的功能，不要點
 
 ## 啟動方式 How to install
 1. 將專案clone到本地端
@@ -45,7 +47,7 @@ npm run seed
 - Express-Handlebars: v4.0.4
 - Mongoose: v5.9.14
 - method-override: v3.0.0
-
+- handlebars-helpers: v0.10.0
 
 ## Author
 Qi-Hua(Emily) Wang
